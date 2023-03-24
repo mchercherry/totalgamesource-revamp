@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --blu: #50A5AF;
+    --o: #FA3B12;
+    --os: #FBEADD;
+    --w: #EDF4F7;
+    --bla: #0E384A;
+  }
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+   }
+
+   * {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    max-width: 100%;
+    background-color: var(--w);
+}
+
+/*Navigation stuff*/
+.nav {
+    position: sticky;
+    top: 0;
+   background: var(--blu);
+    z-index: 2;
+  }
+  
+.navgroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .nav img {
+      margin-left: 50px;
+  }
+
+  .nav ul {
+    padding-right: 75px;
+  }
+    
+    .nav li {
+      list-style: none;
+      display: inline-block;
+  }
+    
+    .nav a {
+      text-decoration: none;
+      color: var(--w);
+      transition: color .3s;
+      padding: 15px;
+      font-size: 15px;
+  }
+    
+    .nav a:hover {
+      color: var(--bla);
+  }
+  
+    .nav span {
+      color: var(--o);
+  }
