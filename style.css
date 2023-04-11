@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --blu: #50A5AF;
     --o: #FA3B12;
     --os: #FBEADD;
     --w: #EDF4F7;
-    --bla: #0E384A;
+    --blau: #0E384A;
+    --bla: #01070F;
   }
 
 html {
@@ -20,10 +21,28 @@ html {
   }
 
 body {
-    font-family: 'Inter', sans-serif;
+  font-family: 'Raleway', sans-serif;
     font-weight: 500;
     max-width: 100%;
     background-color: var(--w);
+    font-size: 13px;
+    color: var(--bla);
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+  color: var(--blau);
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  color: var(--o);
+}
+
+a {
+  text-decoration: none;
 }
 
 /*Navigation stuff*/
@@ -62,9 +81,44 @@ body {
   }
     
     .nav a:hover {
-      color: var(--bla);
+      color: var(--blau);
   }
   
     .nav span {
       color: var(--o);
+  }
+
+  /* Footer */
+
+  footer {
+    background-color: var(--blu);
+    min-height: 22vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+
+  footer img {
+    max-height: 30px;
+    padding-right: 10px;
+
+  }
+
+  .fgroup {
+    padding: 5px 20px 5px 20px;
+    color: var(--w);
+  }
+
+  .icon a {
+    display: flex;
+    align-items: center;
+    color: var(--w);
+    transition: color .3s;
+    justify-content: left;
+    padding: 10px;
+  }
+
+  .icon a:hover {
+    color: var(--blau);
   }
