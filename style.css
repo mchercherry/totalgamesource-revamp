@@ -9,6 +9,12 @@
     --bla: #01070F;
   }
 
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 html {
     scroll-behavior: smooth;
     max-width: 100%;
@@ -33,12 +39,19 @@ h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 80px;
   color: var(--blau);
+  padding-left: 20px;
 }
 
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 60px;
   color: var(--o);
+  padding-left: 20px;
+}
+
+p {
+  line-height: 150%;
+  padding: 20px;
 }
 
 a {
@@ -77,7 +90,7 @@ a {
       color: var(--w);
       transition: color .3s;
       padding: 15px;
-      font-size: 15px;
+      font-size: 17px;
   }
     
     .nav a:hover {
@@ -88,6 +101,139 @@ a {
       color: var(--o);
   }
 
+.hero {
+  background-image: url(images/hero-gym.jpg);
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: none;
+  background-position: bottom;
+}
+
+.heroContent {
+  position: absolute;
+  background-color: rgba(217,217,217,.5);
+  margin-top: 10%;
+  width: 45vw;
+  padding: 10px;
+}
+
+.pHero {
+  font-size: 30px;
+  font-style: italic;
+  color: var(--blau);
+  padding: 0;
+  padding-left: 20px;
+}
+
+.button {
+  font-size: 13px;
+  line-height: 70px;
+  font-weight: bold;
+  color: var(--w);
+  padding: 15px;
+  background-color: var(--o);
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+  margin-left: 20px;
+}
+
+.button:hover {
+  color: var(--bla);
+  background-color: var(--os);
+}
+
+  .ytBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.ytBox iFrame {
+  padding-top: 50px;
+}
+
+  #about {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.aboutbox {
+  width: 50vw;
+}
+
+/* Div Time */
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 433px;
+}
+
+.card:nth-child(odd) {
+  flex-direction: row;
+}
+
+.card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.kc {
+  padding: 30px;
+}
+
+.csize {
+  min-height: 433px;
+  width: 175%;
+}
+
+.cr {
+  background-color: var(--os);
+}
+
+.card1 {
+  background-image: url(images/girl-stretch.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.card2 {
+  background-image: url(images/mircrophone.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.card3 {
+  background-image: url(images/girl-ring.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.card4 {
+  background-image: url(images/man-balance.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.card5 {
+  background-image: url(images/whistle.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
   /* Footer */
 
   footer {
@@ -99,6 +245,15 @@ a {
     font-size: 15px;
   }
 
+  footer p {
+    padding: 0;
+    padding-right: 20px;
+  }
+
+  .fp {
+    padding-left: 20px;
+  }
+
   footer img {
     max-height: 30px;
     padding-right: 10px;
@@ -106,7 +261,7 @@ a {
   }
 
   .fgroup {
-    padding: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
     color: var(--w);
   }
 
