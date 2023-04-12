@@ -237,7 +237,7 @@ a {
 
   /* Modal Stuff */
 
-  .button {
+  .mbutton {
     background: coral;
     padding: 1em 2em;
     color: #fff;
@@ -246,7 +246,7 @@ a {
     border-radius: 25px;
   }
   
-  .button:hover {
+  .mbutton:hover {
     background: #333;
   }
   
