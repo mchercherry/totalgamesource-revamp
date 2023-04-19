@@ -149,10 +149,6 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-nav span {
-  display: none;
-}
-
 .helloworld {
   background: var(--nav);
   min-height: 7.5rem;
@@ -590,11 +586,6 @@ form input[type="text"] {
       
       nav a:hover::before {
         transform: scale(1,.5);
-      }
-
-      nav span {
-        display: block;
-        color: var(--o);
       }
       /** End Navigation Sillies **/
 
