@@ -11,65 +11,82 @@
 </head>
 <body>
 
-    <!--Navigation Sillies-->
-<div class="nav">
-    <div class="navgroup">
-    
-        <a href="index.html">
+    <!-- Navigation -->
+<div class="navigation">
+    <a href="index.html">
     <img src="images/TGS-Logo.png" alt="book" class="logo">
     </a>
 
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <img src="images/Icons/hamburger.svg" alt="hamburger button">
+    </label>
     <nav>
         <ul>
-            <li><a href="index.html">About Us</a><span><b> &#8226; </b></span></li>
-            <li><a href="index.html">Services</a><span><b> &#8226; </b></span></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#about">About Us</a><span><b> &#8226; </b></span></li>
+            <li><a href="index.html#Service">Services</a><span><b> &#8226; </b></span></li>
+            <li><a href="contact.html">Contact</a><span><b> &#8226; </b></span></li>
         </ul>
     </nav>
+  </div>
 
-    </div>
-</div>
-<!--Navigation End-->
+  <div class="helloworld">
+    <p class="sc">Hello!<br>Thank you for visiting the site!</a></p>
+  </div>
+<!-- End Navigation -->
 
-<div class="formBox">
+<!-- Form -->
+<div class="fboximage">
+    <img src="images/gymnist.png" alt="A girl stretches" class="contact">
+<div class="fbox">
+    <div class="ftype">
+        <h2>Interested?
+            <br>Happy to help!
+        </h2>
+        <p>Are you interested in more information? Please complete form below and we will respond within 2 business days.
+            <br>Or, call: <a class="here" href="tel:267-342-4240">267-342-4240</a>. We look forward to working with you soon!
+        </p>
+        <!--Modal-->
+    <div class="buttonBoxModal">
+        <button id='modal-btn' class='mbutton'>DISCLAIMER</button>
 
-    <form method="post" name="myemailform" action="mailto:mqk411@gmail.com">
-
-        <input type="text" name="first_name" placeholder="First Name" required>
-        <input type="text" name="last_name" placeholder="Last Name" required>
-        
-        <input type="text" name="email" placeholder="Email" required>
-        <input type="text" name="phone" placeholder="Phone" required>
-
-        <input type="text" name="organization" placeholder="School/Organization" required>
-        
-        <textarea name="message" placeholder="Type your message..."></textarea>
-
-        <input type="submit" value="Submit">
-
-    </form>
-
-</div>
-
-    <!--Modal-->
-<div class="buttonBoxModal">
-    <button id='modal-btn' class='mbutton'>DISCLAIMER</button>
-
-    <div id='simpleModal' class='modal'>
+        <div id='simpleModal' class='modal'>
   
-        <div class='modal-content'>
+            <div class='modal-content'>
     
-            <span class='closeBtn'>X</span> 
-            <h2>Disclaimer</h2>
-            <p class="pModal">Sport Education and consulting, LLC is an organization, created under the laws of the state of Pennsylvania. Sport Education and Consulting, LLC strongly recommends that all individuals using this material use all prudence and concern for safety and injury prevention. Sport Education and Consulting, LLC expressly advises that the use of these products does not in any way certify the user as a competent professional educator. These products are available to solely enhance your program when used responsibly and prudently. Furthermore, Sport Education and Consulting, LLC, its owners, operators, employees, and/or agents shall not be liable for any damages whatsoever arising from any personal injury or property loss sustained by anyone using these materials and/or information. All users of these materials and/or information provided by Sport Education and Consulting, LLC assume full and complete responsibility for all injuries and damages, which may occur, from the use and dissemination of this product. All users of these materials and/or information also hereby fully and forever release, discharge, indemnify and hold harmless Sport Education and Consulting, LLC, all of its owners, operators, employees, and/or agents from any and all claims, demands, damages or rights of action, present or future, resulting from any organization, person or persons using this information.
-                <br><br>Sport Education and Consulting, LLC exists to be a resource to those who work with youth. Our game ideas, event ideas, staff training presentations, and any content on this web site are provided solely as a general guide. Please use discretion, common sense, and all safety precautions as you decide what activities, programs, events and discussions you are going to do. You must understand the possibility of unforeseen hazards and know the inherent possibility of risk. The Sport Education and Consulting, LLC its leaders, employees, and volunteer staff are not responsible or liable for damages, losses, diseases, or injuries incurred by people using any of this information.
-            </p>
+                <span class='closeBtn'>X</span> 
+                <h2>Disclaimer</h2>
+                <p class="pModal">Sport Education and consulting, LLC is an organization, created under the laws of the state of Pennsylvania. Sport Education and Consulting, LLC strongly recommends that all individuals using this material use all prudence and concern for safety and injury prevention. Sport Education and Consulting, LLC expressly advises that the use of these products does not in any way certify the user as a competent professional educator. These products are available to solely enhance your program when used responsibly and prudently. Furthermore, Sport Education and Consulting, LLC, its owners, operators, employees, and/or agents shall not be liable for any damages whatsoever arising from any personal injury or property loss sustained by anyone using these materials and/or information. All users of these materials and/or information provided by Sport Education and Consulting, LLC assume full and complete responsibility for all injuries and damages, which may occur, from the use and dissemination of this product. All users of these materials and/or information also hereby fully and forever release, discharge, indemnify and hold harmless Sport Education and Consulting, LLC, all of its owners, operators, employees, and/or agents from any and all claims, demands, damages or rights of action, present or future, resulting from any organization, person or persons using this information.
+                    <br><br>Sport Education and Consulting, LLC exists to be a resource to those who work with youth. Our game ideas, event ideas, staff training presentations, and any content on this web site are provided solely as a general guide. Please use discretion, common sense, and all safety precautions as you decide what activities, programs, events and discussions you are going to do. You must understand the possibility of unforeseen hazards and know the inherent possibility of risk. The Sport Education and Consulting, LLC its leaders, employees, and volunteer staff are not responsible or liable for damages, losses, diseases, or injuries incurred by people using any of this information.
+                </p>
     
+            </div>
+  
         </div>
-  
+    </div>
+    <!--End Modal-->
+    </div>
+
+    <div class="formBox">
+        <form method="post" name="myemailform" action="mailto:mqk411@gmail.com">
+
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+        
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone" required>
+
+            <input type="text" name="organization" placeholder="School/Organization" required>
+        
+            <textarea name="message" placeholder="Type your message..." class="texttext"></textarea>
+
+            <input type="submit" value="Submit" class="textsend">
+
+        </form>
     </div>
 </div>
-    <!--End Modal-->
+</div>
+<!-- End Form -->
 
 <!--Footer-->
 <footer>
